@@ -1,0 +1,85 @@
+===== PHARMACY INVENTORY SYSTEM =====
+1. Add Medicine
+2. View Medicines
+3. Sell Medicine
+4. Delete Medicine
+5. Low Stock Report
+6. Inventory Value
+7. Exit
+
+Enter your choice: 1
+
+Name: Paracetamol
+Quantity: 50
+Price: 2.50
+
+Medicine added. ID: M1 | Paracetamol | Qty: 50 | Price: 2.50
+
+----------------------------------------TEST CASE 2------------------------------------------------------------------------------------------------
+
+
+===== PHARMACY INVENTORY SYSTEM =====
+
+Enter your choice: 2
+
+--- Medicine Stock ---
+
+M1 | Paracetamol | Qty: 50 | Price: 2.50
+M2 | Cetirizine | Qty: 8 | Price: 5.00
+M3 | Amoxicillin | Qty: 30 | Price: 12.00
+
+
+------------------------------------------TEST  CASE 3------------------------------------------------------------------------------------------------
+
+===== PHARMACY INVENTORY SYSTEM =====
+
+Enter your choice: 3
+
+ID: M1
+Quantity: 10
+
+Sold 10 units. Bill: 25.00
+Stock left: 40
+
+-------------------------------------------TEST CASE 4-------------------------------------------------------------------------------
+
+===== PHARMACY INVENTORY SYSTEM =====
+
+Enter your choice: 5
+
+--- Low Stock Report ---
+
+M2 | Cetirizine | Qty: 8 (Low stock)
+
+----------------------------------------------TEST CASE 5--------------------------------------------------------------------------------------------
+
+===== PHARMACY INVENTORY SYSTEM =====
+
+Enter your choice: 3
+
+ID: M2
+Quantity: 15
+
+Insufficient stock. Available: 8
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+| S.No. |                  Problems Faced                                              |          Solutions                                       |
+| 1.    | Creating and managing the CSV file was difficult initially.                  | Used Python's `csv` module to automatically create and manage `medicines.csv`. |
+| 2.    | Generating unique Medicine IDs was challenging.                              | Created a function to generate automatic IDs such as M1, M2, M3. |
+| 3.    | Updating medicine quantities after selling was difficult.                    | Used dictionaries to update the stock quantity after every sale. |
+| 4.    | Preventing sales when stock was insufficient.                                | Added a condition to check available stock before completing a sale. |
+| 5.    | Calculating the total bill correctly.                                        | Used the formula: Bill = Quantity × Price. |
+| 6.    | Identifying medicines with low stock.                                        | Added a condition to display medicines whose quantity is below 10. |
+| 7.    | Maintaining updated data after closing the program.                          | Used CSV file handling to save all changes permanently. |
+| 8.    | Handling invalid or negative inputs.                                         | Used `try-except` blocks and conditional statements to validate user input. |
+| 9.    | Deleting a particular medicine from the inventory.                           | Used the medicine ID to find and remove the required dictionary from the list. |
+| 10.   | Calculating the total inventory value.                                       | Multiplied each medicine's quantity by its price and added all the values. |
+
+
+
+Conclusion
+During the development of the Pharmacy Inventory System, I faced challenges related to CSV file handling, stock management, calculations and input validation. I solved these problems using Python concepts such as functions, lists, dictionaries, loops, conditional statements and exception handling.
+
+This project helped me understand how Python can be used to develop a real-world inventory management system.
